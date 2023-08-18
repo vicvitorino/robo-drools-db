@@ -1,0 +1,17 @@
+spring:
+    jpa:
+        properties:
+            hibernate:
+                show_sql: true
+                format_sql: false
+                generate_statistics: false
+        defer-datasource-initialization: true
+    sql:
+        init:
+            mode: always
+    hibernate:
+        ddl-auto: create
+    datasource:
+        url: jdbc:h2:mem:arquetipo;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+        username: sa
+        password: sa
