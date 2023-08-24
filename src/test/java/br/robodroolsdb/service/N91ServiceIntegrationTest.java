@@ -10,7 +10,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import br.robodroolsdb.model.N91;
 import br.robodroolsdb.model.Result;
-import br.robodroolsdb.service.N91Service;
 
 @SpringBootTest
 class N91ServiceIntegrationTest {

@@ -1,3 +1,8 @@
+server:
+    servlet:
+        contextPath: /rest
+    port: 8181
+
 spring:
     jpa:
         properties:
@@ -15,3 +20,8 @@ spring:
         url: jdbc:h2:mem:arquetipo;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
         username: sa
         password: sa
+    cache:
+        type: redis
+    redis:
+        host: localhost
+        port: 6379

@@ -42,15 +42,15 @@ public class N91Service {
 
     private List<Long> getCoProjetos() {
         final List<Long> coProjetos = projetoRepository.findAll().stream()
-            .map(Projeto::getCoProjeto).collect(Collectors.toList());
-        log.info(coProjetos);
+                .map(Projeto::getCoProjeto).collect(Collectors.toList());
+        // log.info(coProjetos);
         return coProjetos;
     }
 
     private List<Long> getCoCursos() {
         final List<Long> coCursos = cursoRepository.findAll().stream()
-            .map(Curso::getCoCurso).collect(Collectors.toList());
-        log.info(coCursos);
+                .map(Curso::getCoCurso).collect(Collectors.toList());
+        // log.info(coCursos);
         return coCursos;
     }
 

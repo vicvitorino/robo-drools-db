@@ -1,5 +1,7 @@
 package br.robodroolsdb.domain.projeto;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -12,7 +14,7 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name = "TB_PROJETO", schema = "PUBLIC")
-public class Projeto {
+public class Projeto implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
