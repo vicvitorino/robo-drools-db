@@ -56,6 +56,7 @@ class N91ServiceIntegrationTest {
         final N91 n91 = new N91();
         n91.setCoProjeto(1L);
         n91.setCoCurso(1L);
+        n91.setNoCurso("Administracao");
         final Result result = n91Service.validar(n91);
 
         assertNotNull(result);
